@@ -23,6 +23,6 @@ jobs:
     - name: Build & Push Image
       run: |
         cd ./python
-        echo "${{ secrets.DOCKERPW }}" | docker login -u "EgoTastic" --password-stdin
-        docker image build -t EgoTastic/gitops:hellov1.0 .
-        docker push EgoTastic/gitops:hellov1.0
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "egotastic" --password-stdin
+        docker image build -t egotastic/gitops:hellov1.0 .
+        docker push egotastic/gitops:hellov1.0
